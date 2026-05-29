@@ -3,7 +3,7 @@
 Integer Linear Programming (ILP) multi-modal transportation optimization model using Python (PuLP, Pandas) and Power BI.
 
 ### Project Overview
-This project optimizes a multi-product logistics network for a cosmetics company handling three product types (cosmetics, skincare, haircare) across four transportation modes (Air, Rail, Road, Sea). The network connects suppliers in 5 cities to 3 distribution centers. 
+The aim of this project is the optimization of a multi-product logistics network for a cosmetics company handling three product types (cosmetics, skincare, haircare) across four transportation modes (Air, Rail, Road, Sea). The network connects suppliers in 5 cities to 3 distribution centers. 
 
 * **Objective:** Minimize total transportation cost and transit time using a weighted objective function (70% cost / 30% time).
 * **Model Inputs:** Network optimization is driven by supply data (by city and product), demand data (by DC and product), and lane-mode capacity boundaries derived directly from historical shipment data.
