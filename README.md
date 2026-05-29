@@ -20,11 +20,12 @@ This project optimizes a multi-product logistics network for a cosmetics company
 ## 2. Historical Capacity Constraints
 * **Approach:** Applied strict historical lane-mode capacity boundaries derived from actual shipment data.
 * **Result:** The model returned an infeasible solution. After carrying out a root-cause analysis in Power BI, it was determined that a specific lane (Bangalore - DC_B - Sea) was heavily overloaded, violating its capacity constraint. This proved that the network mathematically cannot satisfy demand and minimize costs while restricted to strict historical capacity limits.
+![Phase 2 Bangalore Bottleneck](Lane%20Capacity%20Violation.png)
 
 ## 3. Capacity Buffer & Sensitivity Analysis
 * **Approach:** Conducted a sensitivity analysis on the lane capacity constraints to identify the minimum capacity expansion required to achieve a feasible solution and optimized transportation network.
 * **Result:** Identified that adding a 7% capacity buffer (a 1.07 multiplier) resolves the network bottleneck and enables an optimal solution. This model delivered a 2.58% savings in total shipping cost and a 2.59% improvement in average transit time compared to historical data.
-
+![Phase 3 Optimized Modal Shift](Modal%20shift.png)
 ---
 
 ### Key Insights & Operational Takeaways
